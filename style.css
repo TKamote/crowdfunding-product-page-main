@@ -3,6 +3,326 @@
     margin: 0;
     padding: 0;
 }
+:root {
+    --darkGray: hsl(0, 0%, 48%);
+}
+
 body {
     background-color: aliceblue;
+    font-family: 'Commissioner', sans-serif;
+    font-size: 16px;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
 }
+.heading {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 30px;
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+.heading-logo {
+    display: flex;
+    width: 100%;
+    z-index: 10;
+}
+.heading-logo img {
+    width: 150px;
+    margin-top: 30px;
+}
+.heading-bg {
+    content: '';
+    width: 100%;
+    height: 400px;
+    background-image: url(images/image-hero-desktop.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+.heading .head-anchors {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 10px;
+    z-index: 10;
+}
+.heading .head-anchors a {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    width: 50%;
+    margin: 0 10px;
+    z-index: 10;
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+}
+.hamburger {
+    display: none;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    max-width: 720px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+.title {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: -100px;
+    z-index: 10;
+    background: white;
+    padding: 0 30px 30px 30px;
+    border-radius: 10px 10px 0 0;
+}
+.title h1 {
+    padding-bottom: 15px;
+}
+.title p {
+    color: var(--darkGray);
+}
+i img {
+    transform: translateY(-30px);
+}
+.btns {
+    display: flex;
+    justify-content:  space-between;
+    align-items: center;
+    padding: 30px ;
+    margin-bottom: 30px;
+    background: white;
+    border-radius: 0 0 10px 10px;
+}
+.btn {
+    width: 170px;
+    padding: 15px 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: .9rem;   
+}
+.back {
+    background: hsl(176, 72%, 28%);
+    color: white;
+}
+.bookmark {
+    position: relative;
+    padding-left: 35px;
+}
+.bookmark i img {
+    position: absolute;
+    top: 31px;
+    left: 0px;
+    width: 46px;
+} 
+.counters {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 70px 60px 30px;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.count {
+    display: flex;
+    flex-direction: column;    
+}
+.counter-2 {
+    width: 220px;
+    height: 50px;
+    padding-left: 50px;
+    padding-right: 30px;
+    border-left: rgb(165, 158, 158) solid 1px;
+    border-right: rgb(165, 158, 158) solid 1px;
+}
+.counters::before {
+    content: '';
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 620px 60px 30px;
+    border-bottom: 8px solid rgb(238, 213, 213);
+    position: absolute;
+}
+.counters::after {
+    content: '';
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 520px 60px 30px;
+    border-bottom: 8px solid hsl(176, 50%, 47%);
+    position: absolute;
+}
+p.bold {
+    font-weight: 700;
+    font-size: 1.5rem;
+    padding-bottom: 5px;
+}
+p.gray {
+    color: var(--darkGray);
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+.about {
+    background: white;
+    padding: 30px 30px 0 30px;   
+}
+.about h2 {
+    padding-bottom: 30px;
+}
+.about p {
+    padding-bottom: 20px;
+    line-height: 1.6rem;
+    color: var(--darkGray);
+}
+.special-edition {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 1px solid rgb(207, 188, 188);
+    border-radius: 10px;
+    margin: 10px 30px;   
+}
+.special-edition h4 {
+    font-weight: 500;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+.leftover {
+    display: flex;
+    justify-content: space-between;
+}
+.special-edition p.special {
+    padding: 20px 0;
+    line-height: 1.6rem;
+    color: var(--darkGray);
+}
+.special-edition h4.pledge {
+    color: rgb(59, 233, 233);
+}
+.special-edition .leftover p.bigp {
+    font-size: 2rem;
+    font-weight: 500;
+}
+.special-edition .leftover p.bigp span {
+    font-size: 1rem;
+    padding-left: 8px;
+    color: var(--darkGray);
+}
+.leftover button {
+    width: 140px;
+    padding: 15px 10px;
+    border-radius: 30px;
+    border: none;
+    outline: none;
+    font-size: .9rem;  
+    background: hsl(176, 72%, 28%);
+    color: white; 
+}
+.mahogany-edition {
+    color: rgb(153, 147, 147);
+}
+.leftover button.select-3 {
+    background: hsl(164, 17%, 75%);
+}
+@media(max-width: 414px) {
+    .container {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 70px;
+    }
+    .heading-bg {
+        background-image: url(images/image-hero-mobile.jpg);
+    }
+    .heading .head-anchors {
+        display: none;
+    }
+    .heading-logo img {
+        width: 140px;
+        margin-top: 35px;
+    }
+    .hamburger {
+        display: block;
+        z-index: 10;
+        color: white;
+        font-size: 25px;
+        margin-top: 0;
+    }
+    .btns {
+        justify-content: space-evenly;
+    }
+    .bookmark {
+        width: 46px;
+        color: transparent;
+    }
+    .bookmark i img {
+        display: block;
+        position: absolute;
+        top: 31px;
+        left: 0px;
+        width: 46px;
+    } 
+    .back {
+        width: 220px;
+    }
+    .counters { 
+        flex-direction: column; 
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;  
+    }
+    .count {
+       width: 100%;
+       margin: 0 auto;
+    }
+    .counter-2 {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 0px;
+        padding-right: 0px;
+        border-left: rgb(165, 158, 158) solid 0px;
+        border-right: rgb(165, 158, 158) solid 0px;
+    }
+    .counters::before {
+        padding: 80px 260px 160px 30px;
+        border-bottom: 8px solid rgb(238, 213, 213);
+    }
+    .counters::after {
+        padding: 80px 220px 160px 30px;
+        border-bottom: 8px solid hsl(176, 50%, 47%);
+    }
+    .wrapper {
+        padding-bottom: 30px;
+    }
+    .header {
+        flex-direction: column;    
+    }
+    .special-edition h4.pledge {
+        padding: 10px 0;
+    }
+    .leftover {
+        flex-direction: column;
+    }
+    .leftover button {
+        margin-top: 20px;
+    }
+}
+
+    
+
+
